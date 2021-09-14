@@ -25,7 +25,12 @@ export default (state = initialState, { type, payload }) => {
       let correctAnswer = checkAnswer.map((v) => v.text).join(" ");
       if (correctAnswer === state.trueAnswers[state.level]) {
         console.log("ishladi");
-        return { ...state, level: state.level + 1, answer: [] };
+        return {
+          ...state,
+          level: state.level + 1,
+          answer: [],
+          progress: state.progress + 10,
+        };
       } else {
         console.log("ishlamadi");
       }
