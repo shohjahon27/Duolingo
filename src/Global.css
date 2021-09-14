@@ -1,0 +1,20 @@
+.img-responsive{
+    font-size: 10px;
+    margin-left: 200px;
+    width: 400px;
+    height: 400px;
+}
+.place{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    
+}
+.text1{
+    text-align: center;
+    min-width:300px;
+    box-shadow: 0 10px 30px silver;
+    padding:15px;
+    border-radius:15px;
+    border: 1px solid;
+}   
